@@ -1,0 +1,378 @@
+
+
+:root{
+    --main:rgb(212, 150, 64);
+    --sec:rgb(105, 54, 18);
+    --acc:rgb(245, 232, 184);
+    --blackcust: rgb(30, 8, 8);
+}
+
+body{
+    background-color: var(--acc);
+}
+
+
+
+#myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: Titolo;
+    src: url("./Modernism-Stoke.ttf");
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+ 
+}
+
+h1{
+    font-size: 12vh;
+    text-shadow: 2px 2px var(--sec);
+    font-family: Titolo;
+    color: var(--main);
+}
+
+
+h2,h3,h4{
+    font-family: 'Fraunces', serif;
+  
+}
+
+.text-main{
+    color: var(--main);
+}
+
+.text-sec{
+    color: var(--sec);
+}
+
+.text-acc{
+    color: var(--acc);
+}
+
+.text-blackcust{
+    color: var(--blackcust);
+}
+
+.bg-main{
+   background-color: var(--main);
+}
+
+.bg-sec{
+   background-color: var(--sec);
+}
+
+.bg-acc{
+    background-color: var(--acc);
+}
+
+.bg-blackcust{
+    background-color: var(--blackcust);
+}
+
+.border-main{
+    border: 2px solid var(--main);
+}
+
+.border-sec{
+    border: 2px solid var(--sec);
+}
+
+.border-acc{
+    border: 2px solid var(--acc);
+}
+
+.border-blackCus{
+    border: 2px solid var(--blackcus);
+}
+
+.btn-custom{
+    background-color: var(--acc);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid var(--blackcust);
+    color: var(--sec);
+    font-size: large;
+    transition: 0.4s;
+}
+
+.btn-custom:hover{
+    background-color: var(--main);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px  solid var(--blackcust);
+    color: var(--acc);
+    font-size: large;
+}
+
+.btn-custom2{
+    background-color: var(--acc);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px var(--blackcust);
+    color: var(--sec);
+   
+    transition: 0.4s;
+}
+
+.btn-custom2:hover{
+    background-color: var(--main);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid var(--blackcust);
+    color: var(--acc);
+    
+}
+
+.logo{
+    width: 40px;
+
+}
+
+#mainNavbar{
+    transition: 0.4s;
+}
+
+#navIcon{
+    transition: 0.4s;
+}
+
+.img-custom{
+    width: 600px;
+}
+
+@media screen and (max-width: 900px) {
+    .img-custom{
+        width: 300px;
+    }
+}
+
+.increment-numbers{
+    font-size: 50px;
+    color: var(--sec);
+    font-weight: 700;
+}
+
+/* SWIPER */
+.swiper {
+
+    height: 400px;
+  }
+
+.card-custom-sw{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid var(--blackcust);
+    background-image: url(./patternImg.jpg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-custom-trasporti{
+
+    border: 3px  solid var(--blackcust);
+    color: var(--main);
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url(./patternImg.jpg);
+    transition: 0.4s;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.col-custom-trasporti:hover{
+
+    border: 3px  solid var(--blackcust);
+    color: var(--blackcust);
+    padding: 20px;
+    border-radius: 20px;
+    transform: scale(1.2);
+    cursor: pointer;
+
+
+}
+
+
+/* CARD */
+
+.category-card{
+    border: 4px solid var(--sec);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    background: url('./patternImg.jpg');
+    background-size: cover;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  /* SCROLLER ICON */
+
+  #scroller{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 2;
+  }
+
+  #ABOUTUS{
+    background:linear-gradient(rgba(238, 227, 224, 0.082), rgba(238,227,224,0.8)),url('./immafine-body2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
+
+#LENOSTRERECENSIONI{
+    background:linear-gradient(rgba(238, 227, 224, 0.082), rgba(238,227,224,0.8)),url('./img-body3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#LENOSTRESPEDIZIONI{
+    background:linear-gradient(rgba(238, 227, 224, 0.082), rgba(238,227,224,0.8)),url('./img-body-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#CATEGORIE{
+    background:linear-gradient(rgba(238, 227, 224, 0.082), rgba(238,227,224,0.8)),url('./img-body-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* PAGINA ANNUNCI */
+.header-custom{
+    background-image: url(./Immaginebody.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+  
+
+  .announcement-card{
+    min-height: 300px;
+    border: 4px solid var(--sec);
+    border-radius: 20px;
+    margin-top: 20px;
+    color: var(--sec);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(./patternImg.jpg);
+  }
+
+ 
+  .inputNumber{
+    font-size: 40px;
+    color: var(--main);
+    font-weight: 600;
+  }
+
+  .card-head{
+    min-height: 50px;
+
+  }
+
+  .img-Card-Custom{
+    height: 100px;
+    border-radius: 50px;
+  }
+
+
+  /* PAGINA CHI SIAMO? */
+
+
+  .circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 10px solid var(--sec);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .opener{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid var(--sec);
+    background-color: var(--acc);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .moved{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid var(--sec);
+    position: absolute;
+    background-image: url(./danilo.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .staffCard{
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    border: 5px solid var(--sec);
+    background-color: whitesmoke;
+
+    background-image: url(./patternImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
